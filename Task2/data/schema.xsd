@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/postcard"
+        xmlns:tns="http://www.example.com/postcard"
+        elementFormDefault="qualified">
+
+    <element name="Postcard" type="tns:PostcardType" abstract="true"/>
+    <element name="printed-postcard" type="tns:PrintedPostcard" substitutionGroup= "tns:Postcard"/>
+    <element name="digital-postcard" type="tns:DigitalPostcard" substitutionGroup= "tns:Postcard"/>
+
+    <element name="cards">
+        <complexType>
+            <sequence>
+                <element ref="tns:printed-postcard"
+                         minOccurs="0"
+                         maxOccurs="unbounded"/>
+                <element ref="tns:digital-postcard"
+                         minOccurs="0"
+                         maxOccurs="unbounded"/>
+
+            </sequence>
+        </complexType>
+    </element>
+
+
+    <complexType name="PostcardType">
+        <sequence>
+            <element name="theme" type="string"/>
+            <element name="type" type="tns:TypeDestinationPostcard"/>
+            <element name="country-of-production" type="string"/>
+            <element name="year" type="gYear"/>
+            <element name="sent" type="boolean"/>
+        </sequence>
+        <attribute name="id" type="tns:IDCard" use="required"/>
+        <attribute name="author" type="string" use="optional" default="unknown"/>
+    </complexType>
+
+
+    <simpleType name="IDCard">
+        <restriction base="ID">
+            <minLength value="5"/>
+            <maxLength value="10"/>
+        </restriction>
+    </simpleType>
+
+
+    <simpleType name="TypeDestinationPostcard">
+        <restriction base="string">
+            <enumeration value="greeting"/>
+            <enumeration value="advertising"/>
+            <enumeration value="ordinary"/>
+        </restriction>
+    </simpleType>
+
+
+    <complexType name="PrintedPostcard">
+        <complexContent>
+            <extension base="tns:PostcardType">
+                <sequence>
+                    <element name="color-type">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="black-and-white"/>
+                                <enumeration value="color"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                </sequence>
+                <attribute name="size" type="string" use="optional" default="unknown"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="DigitalPostcard">
+        <complexContent>
+            <extension base="tns:PostcardType">
+                <attribute name="file-format" use="required">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="PSD"/>
+                            <enumeration value="TIFF"/>
+                            <enumeration value="BMP"/>
+                            <enumeration value="JPEG"/>
+                            <enumeration value="JPEG2000"/>
+                            <enumeration value="JPEG-XR"/>
+                            <enumeration value="GIF"/>
+                            <enumeration value="PNG"/>
+                            <enumeration value="PDF"/>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+                <attribute name="size-file" type="string" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+</schema>

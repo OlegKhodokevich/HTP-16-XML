@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/postcard"
+       xsi:schemaLocation="http://www.example.com/postcard schema.xsd">
+
+
+    <printed-postcard id="P000007" author="Muhamed" size="90x140">
+        <theme>mosque</theme>
+        <type>ordinary</type>
+        <country-of-production>Livia</country-of-production>
+        <year>2017</year>
+        <sent>true</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <digital-postcard id="D000008" author="Berdi" size-file="15 KB" file-format="JPEG-XR">
+        <theme>fashion</theme>
+        <type>greeting</type>
+        <country-of-production>Turkmenistan</country-of-production>
+        <year>2018</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+
+</cards>

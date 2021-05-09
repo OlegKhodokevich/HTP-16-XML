@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/postcard"
+       xsi:schemaLocation="http://www.example.com/postcard schema.xsd">
+
+
+    <printed-postcard id="P000001" author="khodokevich" size="120x235">
+        <theme>nature</theme>
+        <type>ordinary1</type>
+        <country-of-production>Belarus</country-of-production>
+        <year>2015</year>
+        <sent>true</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000002" author="khodokevich" size="120x235">
+        <theme>animal</theme>
+        <type>greeting</type>
+        <country-of-production>Belarus</country-of-production>
+        <year>2015</year>
+        <sent>true</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000003">
+        <theme>city</theme>
+        <type>greeting</type>
+        <country-of-production>Belarus</country-of-production>
+        <year>2016</year>
+        <sent>false</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000004" size="120x200">
+        <theme>buildings</theme>
+        <type>advertising</type>
+        <country-of-production>Belarus</country-of-production>
+        <year>2016</year>
+        <sent>true</sent>
+        <color-type>black-and-white</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000005" author="Luchi" size="90x140">
+        <theme>mountains</theme>
+        <type>greeting</type>
+        <country-of-production>Italy</country-of-production>
+        <year>2016</year>
+        <sent>false</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000006" author="Max" size="90x140">
+        <theme>sea</theme>
+        <type>ordinary</type>
+        <country-of-production>Spain</country-of-production>
+        <year>2017</year>
+        <sent>true</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <printed-postcard id="P000007" author="Muhamed" size="90x140">
+        <theme>mosque</theme>
+        <type>ordinary</type>
+        <country-of-production>Livia</country-of-production>
+        <year>2017</year>
+        <sent>true</sent>
+        <color-type>color</color-type>
+    </printed-postcard>
+
+    <digital-postcard id="P000008" author="Berdi" size-file="15 KB" file-format="JPEG-XR">
+        <theme>fashion</theme>
+        <type>greeting</type>
+        <country-of-production>Turkmenistan</country-of-production>
+        <year>2018</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000009" author="Mark" size-file="25 KB" file-format="JPEG">
+        <theme>nature</theme>
+        <type>advertising</type>
+        <country-of-production>Poland</country-of-production>
+        <year>2018</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D0000010" author="Vahtang" size-file="35 KB" file-format="PDF">
+        <theme>fish</theme>
+        <type>greeting</type>
+        <country-of-production>Armenia</country-of-production>
+        <year>2019</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000011" author="Robert" size-file="45 KB" file-format="PNG">
+        <theme>fashion</theme>
+        <type>greeting</type>
+        <country-of-production>England</country-of-production>
+        <year>2019</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000012" author="Semen" size-file="55 KB" file-format="PSD">
+        <theme>sea</theme>
+        <type>greeting</type>
+        <country-of-production>Ukrain</country-of-production>
+        <year>2019</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000013" author="Jan" size-file="65 KB" file-format="JPEG-XR">
+        <theme>other</theme>
+        <type>greeting</type>
+        <country-of-production>Poland</country-of-production>
+        <year>2020</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000014" author="Izmail" size-file="75 KB" file-format="BMP">
+        <theme>fashion</theme>
+        <type>greeting</type>
+        <country-of-production>America</country-of-production>
+        <year>2021</year>
+        <sent>false</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000015" author="Ivan" size-file="56 KB" file-format="JPEG">
+        <theme>tree</theme>
+        <type>greeting</type>
+        <country-of-production>Belarus</country-of-production>
+        <year>2021</year>
+        <sent>true</sent>
+    </digital-postcard>
+
+    <digital-postcard id="D000016" author="Roman" size-file="75 KB" file-format="JPEG-XR">
+        <theme>person</theme>
+        <type>ordinary</type>
+        <country-of-production>Turkmenistan</country-of-production>
+        <year>2021</year>
+        <sent>true</sent>
+    </digital-postcard>
+</cards>
